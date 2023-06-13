@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="icon/PTIT.png" height="57px" width="45px" alt="" />
+        <h2 id="time"></h2>
+
+        <label class="toggle-switch">
+            <input type="checkbox" id="toggle">
+            <span class="slider" title="Tự động cập nhật dữ liệu"></span>
+        </label>
+
+        <nav class="navigation">
+            <a href="https://qldt.ptit.edu.vn/Default.aspx?page=gioithieu" target="_blank">Home</a>
+            <button class="btnLogin-popup">Login</button>
+        </nav>
+    </header>
+
+    <div class="introduce">
+        <h2 id="demo">Chào bạn!</h2><br>
+        <p class="text1">Bạn đang sử dụng Extension giúp xem thời khóa biểu của sinh viên PTIT</p><br>
+        <p class="text2">Click vào mục "Login" để đăng nhập tài khoản QLDT</p>
+
+        <span class="icon_noti" style="display: none;">
+            <img src="icon/noti.png" height="20px" width="20px" alt="" />
+        </span>
+        <div class="noti_box" style="padding: 20px 20px;">
+            <h3 class="nmai" style="text-decoration: underline;"></h3>
+        </div>
+
+        <span class="icon_test" style="display: none;">
+            <img src="icon/test.png" height="20px" width="20px" alt="" />
+        </span>
+        <div class="test_box" style="padding: 20px 20px;">
+            <h3 class="headt" style="text-decoration: underline;"></h3>
+        </div>
+
+        <span class="icon_news" style="display: none;">
+            <img src="icon/news.png" height="20px" width="20px" alt="" />
+        </span>
+        <div class="news_box" style="padding: 20px 20px;">
+            <h3 class="headn" style="text-decoration: underline;"></h3>
+        </div>
+
+        <nav class="logout" style="display: none;">
+            <a id="logoutBtn">Logout</a>
+            <a id="refresh" href=""></a>
+        </nav>
+    </div>
+
+    <div class="taskList">
+        <p id="tlb" style="display: none;">Updating...</p>
+        <div class="loading-bar" id="lb" style="display: none;"></div>
+    </div>
+    
+    <div class="wrapper">
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box-un">
+                    <input type="text" id="username" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box-pw">
+                    <input type="password" id="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-submit">
+                    <label>
+                        <input type="checkbox" class="rm">Remember me
+                    </label>
+                    <button type="submit" class="btn">Login
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="box">
+        <button class="pd">Prev week</button>
+        <h2 class="td"></h2>
+        <button class="nd">Next week</button>
+    </div>
+
+    <script src="myscript.js"></script>
+
+</body>
+
+</html>

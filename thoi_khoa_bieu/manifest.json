@@ -1,0 +1,23 @@
+{
+    "name": "Thời khóa biểu - PTIT",
+    "version": "1.0",
+    "manifest_version": 3,
+    "description": "Xem thời khóa biểu của sinh viên PTIT",
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "storage",
+        "scripting",
+        "notifications"
+    ],
+    "host_permissions": [
+        "https://qldt.ptit.edu.vn/*"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "login.html",
+        "default_icon": "icon/icon_ptit.png"
+    }
+}
